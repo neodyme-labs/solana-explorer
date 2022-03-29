@@ -90,16 +90,12 @@ function App() {
               />
             )}
           />
-          <Route 
+          <Route
             exact
             path={["/security/:address"]}
-            render={
-              ({match}) => (
-                <SecurityDetailsPage 
-                  address={match.params.address}
-                />
-              )
-            }
+            render={({ match }) => (
+              <SecurityDetailsPage address={match.params.address} />
+            )}
           />
           <Route exact path="/">
             <ClusterStatsPage />

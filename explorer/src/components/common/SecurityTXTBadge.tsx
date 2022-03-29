@@ -3,12 +3,12 @@ import { SecurityTXT } from "utils/security-txt";
 
 export function SecurityTXTBadge({
   securityTXT,
-  pubkey
+  pubkey,
 }: {
-    securityTXT: SecurityTXT | undefined;
-    pubkey: PublicKey
+  securityTXT: SecurityTXT | undefined;
+  pubkey: PublicKey;
 }) {
-    //TODO: href params
+  //TODO: href params
   if (securityTXT) {
     return (
       <h3 className="mb-0">
@@ -25,9 +25,7 @@ export function SecurityTXTBadge({
   } else {
     return (
       <h3 className="mb-0">
-        <span className="badge bg-warning-soft rank">
-          Not included
-        </span>
+        <span className="badge bg-warning-soft rank">Not included</span>
       </h3>
     );
   }

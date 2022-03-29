@@ -150,8 +150,11 @@ export function UpgradeableProgramSection({
           </td>
         </tr>
         <tr>
-        <td>
-          <SecurityLabel />
+          <td>
+            {
+              //TODO: display also for non upgradeable programs
+            }
+            <SecurityLabel />
           </td>
           <td className="text-lg-end">
             <SecurityTXTBadge
@@ -181,7 +184,7 @@ export function UpgradeableProgramSection({
 
 function SecurityLabel() {
   return (
-    <InfoTooltip text="Indicates whether the program currently deployed on-chain has a .security.txt ELF section. Security.txt helps security researchers to get in contact with the right person if an issue has been found.">
+    <InfoTooltip text="Security.txt helps security researchers to contact developers if they find security bugs.">
       Security.txt
     </InfoTooltip>
   );
